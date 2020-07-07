@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title> Widchard Faustin</title>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" type="text/css" href="main.css">
+			<center><h1>Widchard Faustin's Portfolio<h1>
+			<p>
+			<h3>Contact Me</h3></center>
+			
+			<p></p>
+			<center> <a href="https://www.linkedin.com/in/w-f-275chs/"> Linkedin Profile </a> </center>
+	</head>
+	<body>
+		<?php
+			if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['buttonSubmit']))
+			{
+				runEmailSend();
+			}
+			function runEmailSend()
+			{
+				$to = "faustinwid@gmail.com";
+				$subject = $_POST['subject'] + ": " + $_POST['lastname'] + ", " + $_POST['firstname'];
+				$text = $_POST['content'] + "\n" + $_POST['email']; 
+				$from = $_POST['email']; 
+				if ($from == "" || $from == " " || $subject == "" || $subject == " "){
+					$errorval = "Not valid"
+					$_POST['Checked'].value = $errorval; 
+				}
+				else{
+					mail($to,$subject,$text);
+				}
+			}
+		?>
+		<form onsubmit="contactus.php" method="post">
+			<div id="contactme" class="contactme">
+				<p>
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="First name is ..." />
+				
+				<p>
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Last name is ..." />
+				
+				<p>
+				<label for="email">Email</label>
+				<input type="text" id="email" name="email" placeholder="Email Address is ..." />
+				
+				<p>
+				<label for="subject">Subject</label>
+				<input type="text" id="subject" name="subject" placeholder="Subject of email is ..." />
+				
+				<p>
+				<label for="content">Subject</label>
+				<textarea id="content" name="content" placeholder="Content..." style="height:200px" ></textarea>
+				
+				<p>
+				<input type="Submit" id="Submit" name="buttonSubmit" value="Submit" />
+				
+				<p name="Checked">
+			
+			</div>
+		</form>
+	</body>
+</html>
