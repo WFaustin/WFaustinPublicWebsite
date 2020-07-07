@@ -33,7 +33,7 @@
 				}
 			}
 		?>
-		<form onsubmit="contactus.php" method="get">
+		<form action="https://formspree.io/xwkrrrrk" method="POST">
 			<div id="contactme" class="contactme">
 				<p>
 				<label for="fname">First Name</label>
@@ -45,18 +45,18 @@
 				
 				<p>
 				<label for="email">Email</label>
-				<input type="text" id="email" name="email" placeholder="Email Address is ..." />
+				<input type="text" id="email" name="_replyto" placeholder="Email Address is ..." />
 				
 				<p>
 				<label for="subject">Subject</label>
 				<input type="text" id="subject" name="subject" placeholder="Subject of email is ..." />
 				
 				<p>
-				<label for="content">Subject</label>
-				<textarea id="content" name="content" placeholder="Content..." style="height:200px" ></textarea>
+				<label for="content">Message</label>
+				<textarea id="content" name="message" placeholder="Content..." style="height:200px" ></textarea>
 				
 				<p>
-				<input type="Submit" id="Submit" name="buttonSubmit" value="Submit" />
+				<button type="Submit" id="Submit" name="buttonSubmit" value="Submit">Submit</button>
 				
 				<p name="Checked">
 			
