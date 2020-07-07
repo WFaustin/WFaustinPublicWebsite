@@ -14,26 +14,26 @@
 	</head>
 	<body>
 		<?php
-			if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['buttonSubmit']))
+			if($_SERVER['REQUEST_METHOD'] == "GET" and isset($_GET['buttonSubmit']))
 			{
 				runEmailSend();
 			}
 			function runEmailSend()
 			{
 				$to = "faustinwid@gmail.com";
-				$subject = $_POST['subject'] + ": " + $_POST['lastname'] + ", " + $_POST['firstname'];
-				$text = $_POST['content'] + "\n" + $_POST['email']; 
-				$from = $_POST['email']; 
+				$subject = $_GET['subject'] + ": " + $_GET['lastname'] + ", " + $_POST['firstname'];
+				$text = $_GET['content'] + "\n" + $_GET['email']; 
+				$from = $_GET['email']; 
 				if ($from == "" || $from == " " || $subject == "" || $subject == " "){
 					$errorval = "Not valid"
-					$_POST['Checked'].value = $errorval; 
+					$_GET['Checked'].value = $errorval; 
 				}
 				else{
-					mail($to,$subject,$text);
+					mail($to,$subject,$text, "From: $_GET['lastname'] <$from>");
 				}
 			}
 		?>
-		<form onsubmit="contactus.php" method="post">
+		<form onsubmit="contactus.php" method="get">
 			<div id="contactme" class="contactme">
 				<p>
 				<label for="fname">First Name</label>
