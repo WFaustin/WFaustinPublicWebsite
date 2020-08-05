@@ -135,6 +135,9 @@ h1, h3 {
 	height: 300px; 
 	width: 250px;
 	font-family: "Raleway", sans-serif; 
+	font-size: 18px;
+	color: white;
+	text-decoration: yellowgreen;
 	justify-content: center;
 	align-items: center;
 	border: 3px solid white; 
