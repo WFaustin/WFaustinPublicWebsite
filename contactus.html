@@ -4,15 +4,19 @@
 			<title> Widchard Faustin</title>
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link rel="stylesheet" type="text/css" href="main.css">
-			<center><h1>Widchard Faustin's Portfolio<h1>
+			<link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
+			<h1>Widchard Faustin's Portfolio<h1>
 			<p>
-			<h3>Contact Me</h3></center>
+			<h3>Contact Form</h3>
 			
 			<p></p>
-			<center> <a href="https://www.linkedin.com/in/w-f-275chs/" id="Linkedin"> Linkedin Profile </a> </center>
-			<p>
-			<a href="https://wfaustin.github.io/WFaustinPublicWebsite"> Back to Original Site </a>
+			<a href="https://www.linkedin.com/in/w-f-275chs/" id="Linkedin"> 
+				<img src="img/pngguru.com.png" alt="LinkedIn" id="LinkedinButton"></img>
+			</a> 
+			<div class="please">
+				<a href="https://wfaustin.github.io/WFaustinPublicWebsite" class="projectLinks"> Back to Original Site </a>
+			</div>
+			<p></p>
 	</head>
 	<body>
 		<?php
@@ -35,26 +39,27 @@
 				}
 			}
 		?>
-		<form action="https://formspree.io/xwkrrrrk" method="POST">
+		<div id="wrapper" class="contactWrapper">
+		<form action="https://formspree.io/xwkrrrrk" method="POST" class="submitform">
 			<div id="contactme" class="contactme">
 				<p>
-				<label for="fname">First Name</label>
+				<label for="fname">First Name: </label>
 				<input type="text" id="fname" name="firstname" placeholder="First name is ..." />
 				
 				<p>
-				<label for="lname">Last Name</label>
+				<label for="lname">Last Name: </label>
 				<input type="text" id="lname" name="lastname" placeholder="Last name is ..." />
 				
 				<p>
-				<label for="email">Email</label>
+				<label for="email">Email: </label>
 				<input type="text" id="email" name="_replyto" placeholder="Email Address is ..." />
 				
 				<p>
-				<label for="subject">Subject</label>
+				<label for="subject">Subject: </label>
 				<input type="text" id="subject" name="subject" placeholder="Subject of email is ..." />
 				
 				<p>
-				<label for="content">Message</label>
+				<label for="content">Message: </label>
 				<textarea id="content" name="message" placeholder="Content..." style="height:200px" ></textarea>
 				
 				<p>
@@ -64,5 +69,6 @@
 			
 			</div>
 		</form>
+		</div>
 	</body>
 </html>

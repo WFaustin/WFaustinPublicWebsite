@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-	<div class="blurred-box"></div>
 	<head>
 			<title> Widchard Faustin</title>
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<script type="text/Javascript" src="./scripts/homepage.js"></script>
+			<script type="text/Javascript" src="./scripts/homepage.js"></script>
 			<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-			<center><h1>Widchard Faustin's Portfolio<h1></center>
+			<h1>Widchard Faustin's Portfolio</h1>
 			<p></p>
 			<a href="https://www.linkedin.com/in/w-f-275chs/" id="Linkedin"> 
-				<img src="img/hiclipart.com.png" alt="LinkedIn" id="LinkedinButton"></img>
+				<img src="img/pngguru.com.png" alt="LinkedIn" id="LinkedinButton"></img>
 			</a>
 	</head>
 	<body>
@@ -21,31 +22,35 @@
 					<a href="contactus.html" class="contactLinks">Contact Me</a> <a href="https://github.com/WFaustin/WFaustinPublicWebsite/blob/master/WFaustin%20Resume%20Online.pdf" download="https://github.com/WFaustin/WFaustinPublicWebsite/blob/master/WFaustin%20Resume%20Online.pdf" class="contactLinks"> Resume </a>
 				</div>
 				<br>
-				<a href="https://gitlab.com/WFaustin/chessvalidationprojectse576" class="projectLinks"> Chess Validation Software </a>
-				
-				<a href="https://sites.google.com/view/massiveshrimpgames/home" class="projectLinks"> Ragball </a>
-				
-				<a href="https://bitbucket.org/CBrice562/roboarena/src/master/" class="projectLinks"> Robo-Arena Bitbucket </a>
-				
-				<a href="https://github.com/ctd58/Respite/tree/master/Pages%20Wanted" class="projectLinks"> Sone Github </a>
-				
-				<a href="https://github.com/das446/Checkers" class="projectLinks"> Networking Checkers Github </a>
-				
-				<a href="https://github.com/WFaustin/ChineseCheckers" class="projectLinks"> Chinese Checkers Java Swing Application </a>
-				
-				<a href="https://github.com/das446/SanctusFortis" class="projectLinks"> Sanctus Fortis </a>
-				
-				<a href="https://gitlab.com/WFaustin/discordrandomizerbot" class="projectLinks"> Discord Randomizer Bot </a>
-				
+				<div id="ChessValidationDiv" class="projectDivs" onclick="return API.divChoice(Number(document.getElementById('ChessValidationDiv').getAttribute('switchcase')))" switchcase=0>
+					Chess Validation
+				</div>
+				<div id="RagballDiv" class="projectDivs" onclick="return API.divChoice(Number(document.getElementById('RagballDiv').getAttribute('switchcase')))" switchcase=1>
+					Ragball
+				</div>
+				<div id="RoboArenaDiv" class="projectDivs" onclick="return API.divChoice(Number(document.getElementById('RoboArenaDiv').getAttribute('switchcase')))" switchcase=2>
+					RoboArena
+				</div>
+				<div id="SoneDiv" class="projectDivs" onclick="return API.divChoice(Number(document.getElementById('SoneDiv').getAttribute('switchcase')))" switchcase=3>
+					Sone
+				</div>
+				<div id="CheckersDiv" class="projectDivs" onclick="return API.divChoice(Number(document.getElementById('CheckersDiv').getAttribute('switchcase')))" switchcase=4>
+					Checkers
+				</div>
+				<div id="ChineseCheckersDiv" class="projectDivs" onclick="return API.divChoice(Number(document.getElementById('ChineseCheckersDiv').getAttribute('switchcase')))" switchcase=5>
+					Chinese Checkers
+				</div>
+				<div id="SanctusFortisDiv" class="projectDivs" onclick="return API.divChoice(Number(document.getElementById('SanctusFortisDiv').getAttribute('switchcase')))" switchcase=6>
+					Sanctus Fortis
+				</div>
+				<div id="DiscordRandomBotDiv" class="projectDivs" onclick="return API.divChoice(Number(document.getElementById('DiscordRandomBotDiv').getAttribute('switchcase')))" switchcase=7>
+					Discord Pokemon Randomizer Bot
 				</div>
 			</nav>
 			
-			<div class="descriptions">
+			<div id="descriptions" class="descriptions">
 				
 			</div>
-			
-			
 		</div>
 	</body>
-	</div>
 </html>
