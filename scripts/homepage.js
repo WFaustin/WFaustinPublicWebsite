@@ -48,6 +48,11 @@ var API = (() => {
                 href = "https://gitlab.com/WFaustin/discordrandomizerbot";
                 hrefTitle = "Discord Randomizer Bot";
                 break;
+            case 8:
+                output = "SMALL GODOT TEST GAME\nThis project is a simple Godot game I followed from a tutorial I found. I wanted to get some experience with Godot and test how the HTML5 build feels. The link to the project is https://github.com/WFaustin/SmallGodotGame. The button below will take you to the game. CONTROLS are Left Arrow, Right Arrow, and SpaceBar/Up Arrow";
+                href = "https://wfaustin.github.io/SmallGodotGame/";
+                hrefTitle = "Play The Small Godot Game.";
+                break;
             default:
                 output = ""; 
                 break;
