@@ -41,11 +41,16 @@ h1{
 }
 
 h3{
-	font-size: 24px;
+	font-size: 26px;
 }
 
-h1, h3 {
-	font-family: "Raleway", serif;
+h2{
+	font-size: 28px;
+}
+
+
+h1, h3, h2 {
+	font-family: "Raleway", sans-serif;
 	color: white;
 	text-align: center;
 }
@@ -195,8 +200,6 @@ br{
 }
 
 .contactme{
-
-
 	font: white;
 }
 /*
@@ -229,4 +232,31 @@ input[type=text]:focus{
 textarea:focus{
 	background-color: lightblue;
 	border: 3px solid #555;
+}
+
+#subsubtitle{
+	font-size: 16px; 
+}
+
+#bioParagraph{
+	margin-left: 15%;
+	margin-right: 15%;
+	background-color: #ffffffc7;
+}
+
+#aboutMeHeader{
+	justify-content: center;
+	text-align: center;
+}
+
+.descriptionPar{
+	margin-top: 5%;
+	text-align: center;
+	font-size: 16px;
+}
+
+.profileImage{
+	height: 240px;
+	width: 160px;
+	border-radius: 25px;;
 }
