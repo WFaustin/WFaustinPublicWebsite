@@ -36,22 +36,27 @@ var API = (() => {
             case 5:
                 output = "CHINESE CHECKERS \nChinese Checks is another project that takes the board game, but instead of a Unity game, it was made into a Java Swing Window Application. This game doesn't have AI support, but up to six players can play against each other. (Made in CS 338)";
                 href = "https://github.com/WFaustin/ChineseCheckers";
-                hrefTitle = "Chinese Checkers Java Swing Application";
+                hrefTitle = "Chinese Checkers Java Swing Application Github";
                 break;
             case 6:
                 output = "SANCTUS FORTIS \nSanctus Fortis is a single player platform game that takes inspiration from Greek mythology. You play as an undead hero who serves Hades as his champion, going around and fighting monsters to challenge other gods' champions. (Made in CS 345) ";
                 href = "https://github.com/das446/SanctusFortis";
-                hrefTitle = "Sanctus Fortis";
+                hrefTitle = "Sanctus Fortis Github";
                 break;
             case 7:
                 output = "DISCORD POKEMON RANDOMIZER BOT \nThis project is a individual side project that I developed in order for my friends and I to be able to play randomized pokemon games competitively against each other. This bot holds all of the player information about their roms, and then can output it depending on what each member asks for.";
                 href = "https://gitlab.com/WFaustin/discordrandomizerbot";
-                hrefTitle = "Discord Randomizer Bot";
+                hrefTitle = "Discord Randomizer Bot Github";
                 break;
             case 8:
                 output = "SMALL GODOT TEST GAME\nThis project is a simple Godot game I followed from a tutorial I found. I wanted to get some experience with Godot and test how the HTML5 build feels. The link to the project is https://github.com/WFaustin/SmallGodotGame. The button below will take you to the game. CONTROLS are Left Arrow, Right Arrow, and SpaceBar/Up Arrow";
                 href = "https://wfaustin.github.io/SmallGodotGame/";
-                hrefTitle = "Play The Small Godot Game.";
+                hrefTitle = "Play The Small Godot Game";
+                break;
+            case 9:
+                output = "GODOT MATCH 3 GAME\nThis Basic Match 3 Game was another game I followed from a tutorial, although I made some minor changes to the code that I felt would better suit my experience with making the game. I plan to build off of this idea in a new project that incorporates Match 3 elements.";
+                href = "https://wfaustin.github.io/GodotMatch3Game/";
+                hrefTitle = "Play The Godot Match 3 Game";
                 break;
             default:
                 output = ""; 
