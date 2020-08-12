@@ -58,6 +58,11 @@ var API = (() => {
                 href = "https://wfaustin.github.io/GodotMatch3Game/";
                 hrefTitle = "Play The Godot Match 3 Game";
                 break;
+            case 10:
+                output = "MATCH 3 RTS GAME\nA more novel idea based on earlier prjects, this game is made to be a RTS tower defense game where the player gets access to the RTS units by matching 3 or more tiles on the grid. ";
+                href = "https://wfaustin.github.io/Match3RTSGodot/";
+                hrefTitle = "Play My Prototype Match 3 RTS Game";
+                break;
             default:
                 output = ""; 
                 break;
