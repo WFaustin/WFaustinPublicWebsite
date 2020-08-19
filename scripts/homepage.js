@@ -63,6 +63,11 @@ var API = (() => {
                 href = "https://wfaustin.github.io/Match3RTSGodot/";
                 hrefTitle = "Play My Prototype Match 3 RTS Game";
                 break;
+            case 10:
+                output = "FIFTYTWO\nA game that is a first person shooter, and replaces the guns and bullets with cards. ";
+                href = "https://wfaustin.github.io/CardShooter/";
+                hrefTitle = "Play FiftyTwo";
+                break;
             default:
                 output = ""; 
                 break;
