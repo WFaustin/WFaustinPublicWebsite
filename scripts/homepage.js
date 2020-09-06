@@ -63,9 +63,14 @@ var API = (() => {
                 href = "https://wfaustin.github.io/Match3RTSGodot/";
                 hrefTitle = "Play My Prototype Match 3 RTS Game";
                 break;
-            case 10:
+            case 11:
                 output = "FIFTYTWO\nA game that is a first person shooter, and replaces the guns and bullets with cards. ";
                 href = "https://wfaustin.github.io/CardShooter/";
+                hrefTitle = "FiftyTwo";
+                break;
+            case 12:
+                output = "SE572 Final Project\nA project where we created both a responsive web application as well as a native application. The goal of this assignment was to create a website and app that would allow users to rate movies that they submitted.";
+                href = "https://gitlab.com/WFaustin/se-572-project";
                 hrefTitle = "Play FiftyTwo";
                 break;
             default:
