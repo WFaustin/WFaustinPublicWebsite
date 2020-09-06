@@ -71,7 +71,7 @@ var API = (() => {
             case 12:
                 output = "SE572 Final Project\nA project where we created both a responsive web application as well as a native application. The goal of this assignment was to create a website and app that would allow users to rate movies that they submitted.";
                 href = "https://gitlab.com/WFaustin/se-572-project";
-                hrefTitle = "Play FiftyTwo";
+                hrefTitle = "SE572 Github";
                 break;
             default:
                 output = ""; 
